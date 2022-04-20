@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 A=10
 echo B = $A
+Date=20-02-2022
+echo welcome, to day date = ${Date}
 
 #commnd line substitution
 
