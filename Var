@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+A=10
+echo B = $A
+
+#commnd line substitution
+
+NoOfUsers=$(who |wc -l)
+echo no of users = ${NoOfUsers}
