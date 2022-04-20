@@ -9,5 +9,5 @@
 #NoOfUsers=$(who |wc -l)
 #echo no of users = ${NoOfUsers}
 
-read -p 'enter ' = name
+read -p 'enter '  name
 echo your name = $name
