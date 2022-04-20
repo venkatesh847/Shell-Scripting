@@ -1,6 +1,8 @@
 #!/bin/bash
+a=jj
 Function(){
 echo ven, this is sample
+echo valu of a = ${a}
 }
 
 Function
