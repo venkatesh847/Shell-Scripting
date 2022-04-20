@@ -4,7 +4,9 @@ Function(){
 echo ven, this is sample
 echo valu of a = ${a}
 b=sh
+echo first arg = $1
 }
 
 Function
 echo valu of n = ${b}
+echo first arg in pg = $1
