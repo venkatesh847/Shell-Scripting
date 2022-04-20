@@ -1,8 +1,10 @@
 #!/bin/bash
 a=jj
+echo valu of n = "$b"
 Function(){
 echo ven, this is sample
 echo valu of a = ${a}
+b=sh
 }
 
 Function
