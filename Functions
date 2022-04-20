@@ -7,6 +7,6 @@ b=sh
 echo first arg = $1
 }
 
-Function
+Function ity
 echo valu of n = ${b}
 echo first arg in pg = $1
