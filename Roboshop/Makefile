@@ -1,23 +1,23 @@
 help: ##This is help message
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 frontend: ##Installing frontend
-	@bash installing frontend
+	@bash frontend
 catalogue: ##Installing catalogue
-	@bash installing catalouge
+	@bash catalouge
 cart: ##Installing cart
-	@bash installing cart
+	@bash cart
 mongodb: ##Installing mongodb
-	@bash installing mongodb
+	@bash mongodb
 mysql: ##Installing mysql
-	@bash installing mysql
+	@bash mysql
 payment: ##Installing payment
-	@bash installing payment
+	@bash payment
 rabbitmq: ##Installing rabbitmq
-	@bash installing rabbitmq
+	@bash rabbitmq
 redis: ##Installing redis
-	@bash installing redis
+	@bash redis
 shipping: ##Installing shipping
-	@bash installing shipping
+	@bash shipping
 user: ##Installing user
-	@bash installing user
+	@bash user
 
