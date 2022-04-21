@@ -1,6 +1,6 @@
 frontend:
 	@echo installing frontend
-catalouge:
+catalogue:
 	@echo installing catalouge
 cart:
 	@echo installing cart
