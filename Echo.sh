@@ -1,3 +1,3 @@
 #!/bin/bash
 #echo Hello world
-echo -e "Hello,\n\tHi"
+echo -e "e[31mHello,\n\tHi"
