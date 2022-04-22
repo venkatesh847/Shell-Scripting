@@ -1,3 +1,3 @@
 #!/bin/bash
 #echo Hello world
-echo -e "Hello,\ntHi"
+echo -e "Hello,\n\tHi"
