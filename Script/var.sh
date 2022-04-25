@@ -1,10 +1,10 @@
 #!/bin/bash
 
-name=$venkatesh
+name=$(venkatesh)
 
 sample(){
   echo Hi
-  echo my name is $(name)
+  echo my name is = $(name)
 }
 
 sample
