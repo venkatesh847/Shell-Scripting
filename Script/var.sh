@@ -9,4 +9,4 @@ echo first arg =$1
 }
 
 sample abc
-echo first arg in =$0
+echo first arg in =$2
