@@ -8,5 +8,5 @@ echo "my name is = $name"
 echo first arg =$2
 }
 
-sample abc
+sample abc kk
 echo first arg in =$2
