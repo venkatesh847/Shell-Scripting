@@ -5,7 +5,7 @@ name=venkatesh
 sample(){
   echo Hi
 echo "my name is = $name"
-echo first arg =$1
+echo first arg =$2
 }
 
 sample abc
