@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name=$(venkatesh)
+name=$venkatesh
 echo my name is = $"name"
 sample(){
   echo Hi
