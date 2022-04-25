@@ -30,3 +30,7 @@ shipping: ##Installing shipping
 
 user: ##Installing user
 	@bash user.sh
+
+databases:  ##Install all databases
+databases: mongodb mysql redis rabbitmq
+
