@@ -1,10 +1,10 @@
 #!/bin/bash
 
 name=venkatesh
-echo my name is = $name
+
 sample(){
   echo Hi
-
+echo "my name is = $name"
 }
 
 sample
