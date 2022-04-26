@@ -4,6 +4,6 @@ LOG=/tmp/roboshop.log
 echo -e "Installing nginx\t\t......\t\e[32mdone\e[0m"
 yum install nginx -y > $LOG
 echo "Enabling Nginx"
-systemctl enable nginx
+systemctl enable nginx > $LOG
 echo "Starting Nginx"
-systemctl start nginx
+systemctl start nginx > $LOG
