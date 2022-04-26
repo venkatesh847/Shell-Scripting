@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "Installing nginx\t\t......\tdone"
+echo -e "Installing nginx\t\t......\t\e[32mdone\e[0m"
 yum install nginx -y
 echo "Enabling Nginx"
 systemctl enable nginx
