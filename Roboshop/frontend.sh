@@ -3,7 +3,7 @@
 LOG=/tmp/roboshop.log
 rm -f $LOG
 echo -n -e "Installing nginx\t\t.."
-yum install nginx -y &>>$LOG
+yum install ngin -y &>>$LOG
 if [ $? -eq 0 ]; then
   echo "done"
   else
