@@ -8,6 +8,7 @@ if [ $? -eq 0 ]; then
   echo "done"
   else
     echo "fail"
+    exit 1
  fi
 echo -n -e "Enabling Nginx\t\t.."
 systemctl enable nginx &>>$LOG
@@ -15,6 +16,7 @@ if [ $? -eq 0 ]; then
   echo "done"
   else
     echo "fail"
+    exit 1
  fi
 echo -n -e "Starting Ngin\t\t.."
 systemctl start nginx &>>$LOG
@@ -22,4 +24,5 @@ if [ $? -eq 0 ]; then
   echo "done"
   else
     echo "fail"
+    exit 1
  fi
