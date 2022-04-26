@@ -2,16 +2,24 @@
 
 LOG=/tmp/roboshop.log
 rm -f $LOG
-echo -e "Installing nginx\t\t.."
+echo -n -e "Installing nginx\t\t.."
 yum install nginx -y &>>$LOG
 if [ $? -eq 0 ]; then
   echo "done"
   else
     echo "fail"
  fi
-echo "Enabling Nginx"
+echo -n -e "Enabling Nginx\t\t.."
 systemctl enable nginx &>>$LOG
-echo $?
-echo "Starting Nginx"
+if [ $? -eq 0 ]; then
+  echo "done"
+  else
+    echo "fail"
+ fi
+echo -n -e "Starting Ngin\t\t.."
 systemctl start nginx &>>$LOG
-echo $?
+if [ $? -eq 0 ]; then
+  echo "done"
+  else
+    echo "fail"
+ fi
