@@ -4,5 +4,5 @@
     Url: google.com
   tasks:
     - name: url1
-        debug:
-        msg: {url={Url}}
+      debug:
+        msg: {url = {Url}}
