@@ -1,8 +1,8 @@
 - name: variable
-  hosts: All
-  vars:
-    Url: google.com
+    hosts: All
+    vars:
+        Url: google.com
   tasks:
-- name: url1
-    debug:
-     msg: "{url={Url}}"
+    - name: url1
+        debug:
+            msg: {url={Url}}
