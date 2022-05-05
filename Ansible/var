@@ -17,4 +17,4 @@
   tasks:
     - name: url1
       debug:
-       msg: "url = {{Url}}"
+       msg: "url = {{url}}"
