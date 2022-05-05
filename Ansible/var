@@ -21,7 +21,7 @@
 
 - name: file
   hosts: all
-  vars_file:
+  vars_files:
     - var.file
   tasks:
    - name: url2
