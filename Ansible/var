@@ -1,8 +1,13 @@
 - name: variable
   hosts: all
   vars:
-    Url: google.com
+    Url: play.google.com
   tasks:
     - name: url1
       debug:
+        msg: "url = {{Url}}"
+    -name: url2
+    vars:
+        Url: task.google.com
+     debug:
         msg: "url = {{Url}}"
