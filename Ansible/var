@@ -35,10 +35,10 @@
           debug:
             msg: "Hostname = {{ansible_fqdn}}"
 
-- name: reg
-  hosts: all
+
+- hosts: all
   tasks:
      shell: uptime
      register: out
      debug:
-      msg: "{{out}}"
+       msg: "{{out}}"
