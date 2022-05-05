@@ -18,3 +18,12 @@
     - name : url1
       debug:
         msg: "url = {{url}}"
+
+- name: file
+  hosts: all
+  tasks:
+    - name : url2
+  vars_file:
+    - var.file
+      debug:
+        msg: "url = {{url}}"
