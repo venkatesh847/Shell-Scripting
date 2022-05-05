@@ -38,9 +38,7 @@
 - name: reg
   hosts: all
   tasks:
-    -name: uptime command
      shell: uptime
      register: out
-
      debug:
-      msg: "{{out}}
+      msg: "{{out}}"
