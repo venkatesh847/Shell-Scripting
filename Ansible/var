@@ -28,3 +28,10 @@
      debug:
        msg: "url = {{url}}"
 
+- name: facts
+  hosts: all
+  tasks:
+   - name: fact variable
+     debug:
+     msg: "Hostname = {{ansible_fqdn}}"
+
