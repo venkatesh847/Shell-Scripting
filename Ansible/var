@@ -13,7 +13,7 @@
         msg: "url = {{Url}}"
 
 
-    - name: inv
+    - name: demo
       hosts: all
       tasks:
         - name: url1
