@@ -15,6 +15,6 @@
 - name: invar
   hosts: all
   tasks:
-    - name: url1
+    - name : url1
       debug:
-       msg: "url = {{url}}"
+        msg: "url = {{url}}"
