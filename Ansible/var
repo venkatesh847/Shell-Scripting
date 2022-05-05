@@ -38,8 +38,8 @@
 
 - hosts: all
   tasks:
-     - name: fact
-       shell: uptime
-       register: out
-       debug:
-       msg: "{{out}}"
+       - name: fact
+         shell: uptime
+         register: out
+         debug:
+            msg: "{{out}}"
