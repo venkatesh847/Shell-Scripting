@@ -38,7 +38,7 @@
 
 - hosts: all
   tasks:
-       - name: fact
+       - name: face
          shell: uptime
          register: out
          debug:
