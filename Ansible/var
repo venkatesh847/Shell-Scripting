@@ -33,5 +33,5 @@
   tasks:
         - name: fact
           debug:
-          msg: "Hostname = {{ansible_fqdn}}"
+            msg: "Hostname = {{ansible_fqdn}}"
 
