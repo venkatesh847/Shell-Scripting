@@ -21,9 +21,10 @@
 
 - name: file
   hosts: all
+  vars_file:
+    - var.file
   tasks:
    - name: url2
-     vars_file:
-         - var.file
      debug:
-        msg: "url = {{url}}"
+       msg: "url = {{url}}"
+
