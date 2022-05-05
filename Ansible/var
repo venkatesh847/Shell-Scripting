@@ -11,3 +11,11 @@
         Url: task.google.com
       debug:
         msg: "url = {{Url}}"
+
+
+    - name: inv
+      hosts: all
+      tasks:
+        - name: url1
+          debug:
+            msg: "url = {{Url}}"
