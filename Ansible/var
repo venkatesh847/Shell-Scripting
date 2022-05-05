@@ -31,7 +31,7 @@
 - name: facts
   hosts: all
   tasks:
-   - name  : fact
+   - name: fact
      debug :
      msg   : "Hostname = {{ansible_fqdn}}"
 
