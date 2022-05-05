@@ -12,10 +12,9 @@
       debug:
         msg: "url = {{Url}}"
 
-
-    - name: demo
-      hosts: all
-      tasks:
-        - name: url1
-          debug:
-            msg: "url = {{Url}}"
+- name: invar
+  hosts: all
+  tasks:
+    - name: url1
+      debug:
+       msg: "url = {{Url}}"
