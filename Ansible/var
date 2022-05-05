@@ -22,7 +22,7 @@
 - name: file
   hosts: all
   tasks:
-   - name : url2
+   - name: url2
      vars_file:
          - var.file
      debug:
