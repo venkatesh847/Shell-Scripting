@@ -1,6 +1,7 @@
 - name: Roboshop frontend setup
   hosts: Frontend
   become: yes
+  tags: frontend
   roles:
     - name: frontend
 
