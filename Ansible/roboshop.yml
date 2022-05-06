@@ -5,7 +5,7 @@
     - name: frontend
 
 - name: Roboshop mongodb setup
-  hosts: Mongodb
+  hosts: mongodb
   become: yes
   roles:
     - name: mongodb
