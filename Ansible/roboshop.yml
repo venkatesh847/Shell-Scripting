@@ -11,3 +11,10 @@
   tags: mongodb
   roles:
     - name: mongodb
+
+- name: RoboShop catalogue Setup
+  hosts: catalogue
+  become: yes
+  tags: catalogue
+  roles:
+    - name: catalogue
