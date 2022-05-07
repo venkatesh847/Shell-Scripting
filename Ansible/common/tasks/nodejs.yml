@@ -18,3 +18,9 @@
     remote_src: yes
     owner: roboshop
     group: roboshop
+
+- name: Install npm
+  community.general.npm:
+    path: /home/roboshop/catalogue
+    state: latest
+  become_user: roboshop
