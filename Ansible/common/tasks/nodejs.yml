@@ -13,26 +13,26 @@
 
 - name: copy the file
   copy:
-    src: /tmp/catalogue-main/
-    dest: /home/roboshop/catalogue
+    src: /tmp/{{component}}-main/
+    dest: /home/roboshop/{{component}}
     remote_src: yes
     owner: roboshop
     group: roboshop
 
 - name: Install npm
   community.general.npm:
-    path: /home/roboshop/catalogue
+    path: /home/roboshop/{{component}}
     state: latest
   become_user: roboshop
 
 - name: Update systemd
   copy:
     src: systemd
-    dest: /etc/systemd/system/catalogue.service
+    dest: /etc/systemd/system/{{component}}.service
 
-- name: Restart Catalogue service
+- name: Restart {{component}} service
   systemd:
-    name: catalogue
+    name: {{component}}
     state: restarted
     enabled: yes
     daemon_reload: yes

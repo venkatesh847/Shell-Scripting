@@ -19,9 +19,16 @@
   roles:
     - name: catalogue
 
-- name: RoboShop catalogue Setup
+- name: RoboShop redis Setup
   hosts: redis
   become: yes
   tags: redis
   roles:
     - name: redis
+
+- name: RoboShop user Setup
+  hosts: user
+  become: yes
+  tags: user
+  roles:
+    - name: user
